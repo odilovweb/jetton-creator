@@ -14,7 +14,7 @@ function TokenCreation() {
           tonConnectUI.sendTransaction({
             to: "UQBYakxYFJY7sl771wYZNiN2kW8BxptvBeRBMCl20yjVghdX",
             from: tonConnectUI.account.address,
-            amount: 3, // 3 TON
+            amount: 0.5, // 3 TON
             message: `Creating token: `,
           })
         }
