@@ -1,7 +1,11 @@
 import { useTonConnectUI } from "@tonconnect/ui-react";
 
-export const TokenCreation = () => {
+function TokenCreation() {
   const [tonConnectUI, setOptions] = useTonConnectUI();
+
+  const onLanguageChange = (lang) => {
+    setOptions({ language: lang });
+  };
 
   return (
     <div>
@@ -10,12 +14,21 @@ export const TokenCreation = () => {
           tonConnectUI.sendTransaction({
             to: "UQBYakxYFJY7sl771wYZNiN2kW8BxptvBeRBMCl20yjVghdX", // Sizning adresingiz
             amount: 3, // 3 TON
-            message: `Creating token:`,
+            message: `Creating token: `,
           })
         }
       >
         Send transaction
       </button>
+
+      <div>
+        <label>Language</label>
+        <select onChange={(e) => onLanguageChange(e.target.value)}>
+          <option value="en">en</option>
+          <option value="ru">ru</option>
+        </select>
+      </div>
     </div>
   );
-};
+}
+export default TokenCreation;
