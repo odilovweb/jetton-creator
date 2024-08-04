@@ -34,6 +34,8 @@ const TokenCreation = () => {
       setError("");
     } catch (err) {
       setError("Error creating token. Please try again.");
+      console.log(err);
+
       setSuccess("");
     }
   };
