@@ -3,9 +3,9 @@ import { TonConnectButton, TonConnectUIProvider } from "@tonconnect/ui-react";
 function App() {
   return (
     <TonConnectUIProvider
-      manifestUrl="https://localhost:5173/tonconnect-manifest.json"
+      manifestUrl="https://marvelous-narwhal-c675ba.netlify.app/tonconnect-manifest.json"
       actionsConfiguration={{
-        twaReturnUrl: "https://localhost:5173/",
+        twaReturnUrl: "https://marvelous-narwhal-c675ba.netlify.app/",
       }}
     >
       <div>
