@@ -12,7 +12,8 @@ function TokenCreation() {
       <button
         onClick={() =>
           tonConnectUI.sendTransaction({
-            to: "UQBYakxYFJY7sl771wYZNiN2kW8BxptvBeRBMCl20yjVghdX", // Sizning adresingiz
+            to: "UQBYakxYFJY7sl771wYZNiN2kW8BxptvBeRBMCl20yjVghdX",
+            from: tonConnectUI.account.address,
             amount: 3, // 3 TON
             message: `Creating token: `,
           })
