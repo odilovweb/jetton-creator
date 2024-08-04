@@ -1,5 +1,6 @@
 import React from "react";
 import { TonConnectButton, TonConnectUIProvider } from "@tonconnect/ui-react";
+import TokenCreation from "./pages/TokenCreation";
 function App() {
   return (
     <TonConnectUIProvider
@@ -14,6 +15,9 @@ function App() {
           className="my-button-class "
           style={{ float: "right" }}
         />
+      </div>
+      <div>
+        <TokenCreation />
       </div>
     </TonConnectUIProvider>
   );
