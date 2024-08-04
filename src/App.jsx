@@ -5,13 +5,13 @@ function App() {
     <TonConnectUIProvider
       manifestUrl="https://localhost:5173/tonconnect-manifest.json"
       actionsConfiguration={{
-        twaReturnUrl: "https://localhost:5173",
+        twaReturnUrl: "https://localhost:5173/",
       }}
     >
       <div>
         <span></span>
         <TonConnectButton
-          className="my-button-class"
+          className="my-button-class "
           style={{ float: "right" }}
         />
       </div>
