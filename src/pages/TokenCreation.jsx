@@ -1,6 +1,6 @@
-import { Locales, useTonConnectUI } from "@tonconnect/ui-react";
+import { useTonConnectUI } from "@tonconnect/ui-react";
 
-export const Settings = () => {
+export const TokenCreation = () => {
   const [tonConnectUI, setOptions] = useTonConnectUI();
 
   return (
