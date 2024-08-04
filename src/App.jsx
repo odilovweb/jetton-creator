@@ -3,11 +3,7 @@ import { TonConnectButton, TonConnectUIProvider } from "@tonconnect/ui-react";
 function App() {
   return (
     <TonConnectUIProvider
-      // manifestUrl={`${{
-      //   url: "https://marvelous-narwhal-c675ba.netlify.app/",
-      //   name: "TON Vote",
-      //   iconUrl: "https://ton.vote/logo.png",
-      // }}`}
+      manifestUrl="https://marvelous-narwhal-c675ba.netlify.app/tonconnect-manifest.json"
       actionsConfiguration={{
         twaReturnUrl: "https://marvelous-narwhal-c675ba.netlify.app/",
       }}
